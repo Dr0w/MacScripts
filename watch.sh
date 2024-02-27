@@ -41,7 +41,7 @@ do
   truncated_command=$(truncate_command "$1")
   echo -n "Every $sleep_duration sec.: $truncated_command"
 
-  tput cup 0 $((cols - 28))
+  tput cup 0 $((cols - 30))
   echo "$(date)"
   
   eval "$1"
